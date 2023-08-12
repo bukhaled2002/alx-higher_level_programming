@@ -6,3 +6,5 @@ def uppercase(str):
             print("{}".format(chr(ord(letter) + difference)), end="")
         else:
             print("{}".format(chr(ord(letter))), end="")
+        if letter == str[-1]:
+            print("")
