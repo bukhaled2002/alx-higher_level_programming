@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 def new_in_list(my_list, idx, element):
     prototype=my_list[:]
-    if idx < 0:
-        return prototype
-    if idx > len(my_list) - 1:
-        return prototype
+    if idx < 0 or idx > len(my_list) - 1:
+        return (my_list)
     prototype[idx] = element
-    return prototype
+    return (prototype)
