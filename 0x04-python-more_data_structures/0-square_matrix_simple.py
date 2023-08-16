@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
+    matrix_cp=matrix[:]
     for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            matrix[i][j]=matrix[i][j]**2
+        matrix_cp[i]=list(map(lambda x : x*x,matrix[i]))
+    return matrix_cp
