@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 def best_score(a_dictionary: dict):
     if a_dictionary == None:
         return None
