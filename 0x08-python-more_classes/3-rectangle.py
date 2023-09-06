@@ -60,7 +60,7 @@ class Rectangle:
         prints # with the height and width of the rectangle
         """
         if self.__height == 0 or self.__width == 0:
-            return ""
+            return ("")
         rect = []
         for h in range(self.__height):
             for w in range(self.__width):
