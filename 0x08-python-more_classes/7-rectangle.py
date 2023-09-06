@@ -68,7 +68,7 @@ class Rectangle:
         rect = []
         for h in range(self.__height):
             for w in range(self.__width):
-                rect.append(print_symbol)
+                rect.append(str(self.print_symbol))
             if h != self.__height - 1:
                 rect.append('\n')
 
