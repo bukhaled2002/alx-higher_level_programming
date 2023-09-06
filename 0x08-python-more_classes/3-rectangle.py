@@ -55,7 +55,7 @@ class Rectangle:
             return 0
         return (self.__height + self.__width) * 2
 
-    def __repr__(self):
+    def __str__(self):
         """
         prints # with the height and width of the rectangle
         """
