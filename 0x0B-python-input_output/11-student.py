@@ -10,8 +10,8 @@ class Student:
         self.age = age
 
     def to_json(self, attrs = None):
-        if type(attrs) == list and all(type(elem) == str for elem in attrs):
-            return {k:getattr(self, k) for k in attrs if hasattr(self, k)}
+        if isinstance(attrs, list) and all(type(elem) == str for elem in attrs):
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
 
     def reload_from_json(self, json):
